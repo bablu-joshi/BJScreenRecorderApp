@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C6FCAEF52239668900D3FE14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FCAEF42239668900D3FE14 /* AppDelegate.swift */; };
-		C6FCAEF72239668900D3FE14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FCAEF62239668900D3FE14 /* ViewController.swift */; };
 		C6FCAEFA2239668900D3FE14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FCAEF82239668900D3FE14 /* Main.storyboard */; };
 		C6FCAEFC2239668A00D3FE14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FCAEFB2239668A00D3FE14 /* Assets.xcassets */; };
 		C6FCAEFF2239668A00D3FE14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FCAEFD2239668A00D3FE14 /* LaunchScreen.storyboard */; };
+		C6FCAF0822396F8800D3FE14 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FCAF0722396F8800D3FE14 /* RecordingView.swift */; };
+		C6FCAF0A22396FCE00D3FE14 /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FCAF0922396FCE00D3FE14 /* RecordingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C6FCAEF12239668900D3FE14 /* ScreenRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FCAEF42239668900D3FE14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6FCAEF62239668900D3FE14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6FCAEF92239668900D3FE14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6FCAEFB2239668A00D3FE14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6FCAEFE2239668A00D3FE14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6FCAF002239668A00D3FE14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6FCAF0722396F8800D3FE14 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		C6FCAF0922396FCE00D3FE14 /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		C6FCAEE82239668900D3FE14 = {
 			isa = PBXGroup;
 			children = (
+				C6FCAF0622396F2C00D3FE14 /* RecordingScreen */,
 				C6FCAEF32239668900D3FE14 /* ScreenRecorder */,
 				C6FCAEF22239668900D3FE14 /* Products */,
 			);
@@ -55,13 +58,21 @@
 			isa = PBXGroup;
 			children = (
 				C6FCAEF42239668900D3FE14 /* AppDelegate.swift */,
-				C6FCAEF62239668900D3FE14 /* ViewController.swift */,
 				C6FCAEF82239668900D3FE14 /* Main.storyboard */,
 				C6FCAEFB2239668A00D3FE14 /* Assets.xcassets */,
 				C6FCAEFD2239668A00D3FE14 /* LaunchScreen.storyboard */,
 				C6FCAF002239668A00D3FE14 /* Info.plist */,
 			);
 			path = ScreenRecorder;
+			sourceTree = "<group>";
+		};
+		C6FCAF0622396F2C00D3FE14 /* RecordingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C6FCAF0722396F8800D3FE14 /* RecordingView.swift */,
+				C6FCAF0922396FCE00D3FE14 /* RecordingViewModel.swift */,
+			);
+			path = RecordingScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6FCAEF72239668900D3FE14 /* ViewController.swift in Sources */,
+				C6FCAF0822396F8800D3FE14 /* RecordingView.swift in Sources */,
+				C6FCAF0A22396FCE00D3FE14 /* RecordingViewModel.swift in Sources */,
 				C6FCAEF52239668900D3FE14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

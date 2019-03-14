@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Recording View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScreenRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecordingView" id="BYZ-38-t0r" customClass="RecordingView" customModule="ScreenRecorder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bb7-wK-402" kind="show" id="lVf-Gt-yDw"/>
+                                    <action selector="userAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Krc-mD-tmy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,12 +45,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610" y="-842"/>
+            <point key="canvasLocation" x="370" y="-1725"/>
         </scene>
         <!--Recording Screen-->
         <scene sceneID="iSB-Gn-daI">
             <objects>
-                <viewController storyboardIdentifier="Recording Screen" title="Recording Screen" id="bb7-wK-402" sceneMemberID="viewController">
+                <viewController title="Recording Screen" id="bb7-wK-402" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wGY-1B-lOj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hH-ja-rsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="-2194"/>
+            <point key="canvasLocation" x="1174" y="-1726"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BXq-wl-WSa">
@@ -95,7 +95,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qD-Yc-N3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-110" y="-842"/>
+            <point key="canvasLocation" x="-497" y="-1725"/>
         </scene>
     </scenes>
 </document>
